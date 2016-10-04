@@ -77,5 +77,29 @@ The view has a gesture set up so the user can swipe left to load the next airpor
  ```
 
  When `next()` is called, the next airport status is retrieved from the `airportDictionary` and the view elements are updated with new information.
+
+ ### 6. Define the FeltTemp enum
+---
+
+ Write an enum FeltTemp of type Int that has the following cases cold, cool, warm, hot, none
+     
+ It should have init function that takes in a rawValue which should determine the case based on a temperature range. For eg 30 to 59 should be cool and 60..85 should be warm etc
+     
+     
+ It should have a computed property color which is dependent on the case
+ eg Cold should be blue and Warm should be orange
+
+  ### 7. Define the WindDirection enum
+---
+
+ Write an enum WindDirection of type String that has cases for all 12 directions eg N, NNE
+     
+ This enum should have an init function that takes a String rawValue and returns the appropriate case for eg if the rawValue is North it should get N
+     
+ It should have a computed property called radians of type double that returns the directions in radians based on the value eg N should return 0, NNE should return M_Pi/6
+
+---
+
+
  * Build and run `⌘ + R` the application. Start swiping left to see the status for each airport.
  * Test `⌘ + R` the application.
